@@ -52,7 +52,6 @@ public class SponsorsFragment extends Fragment {
             public void onRefresh() {
                 if (haveNetworkConnection()) {
                     DataDownload download = new DataDownload();
-                    dbSingleton.clearDatabase(DbContract.Sponsors.TABLE_NAME);
                     download.downloadSponsors();
                 } else {
                     OpenEventApp.getEventBus().post(new SponsorDownloadEvent(true));
@@ -77,7 +76,9 @@ public class SponsorsFragment extends Fragment {
             Log.d("countersp", "Refresh done");
 
         } else {
-            Snackbar.make(getView(), getActivity().getString(R.string.refresh_failed), Snackbar.LENGTH_LONG).show();
+            if(getActivity()!=null){
+                Snackbar.make(getView(), getActivity().getString(R.string.refresh_failed), Snackbar.LENGTH_LONG).show();
+            }
             Log.d("countersp", "Refresh not done");
 
         }

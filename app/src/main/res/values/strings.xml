@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">OpenEvent</string>
+    <string name="app_name" translatable="false">OpenEvent</string>
 
     <string name="main_menu">Main menu</string>
     <string name="close_menu">Close menu</string>
@@ -16,6 +16,8 @@
     <string name="menu_sponsor">Sponsors</string>
     <string name="menu_map">Map</string>
     <string name="menu_locations">Locations</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_about">About us</string>
     <string name="session">Session detail</string>
 
     <!--Navigation Drawer-->
@@ -45,10 +47,10 @@
 
 
     <!--Social-->
-    <string name="linkedin">linkedin</string>
-    <string name="twitter">twitter</string>
-    <string name="fb">fb</string>
-    <string name="github">github</string>
+    <string name="linkedin" translatable="false">linkedin</string>
+    <string name="twitter" translatable="false">twitter</string>
+    <string name="fb" translatable="false">fb</string>
+    <string name="github" translatable="false">github</string>
 
     <!--Menu Titles-->
     <string name="search">Search</string>
@@ -58,9 +60,16 @@
     <!--Search Titles-->
     <string name="search_hint_tracks"> Search Tracks</string>
     <string name="refresh_failed">Couldn\'t Refresh</string>
-    <string name="cantDownload">Can\'t Download right now</string>
-    <string name="download_failed">Download Failed, Check Internet Connection</string>
+    <string name="download_failed">Download Failed</string>
     <string name="download_complete">Download Done</string>
     <string name="share_links">Sharing URL</string>
     <string name="time_not_specified">Timings not specified</string>
+
+    <!--Error Titles-->
+    <string name="net_unavailable">Network not available</string>
+    <string name="turn_on">Turn on WiFi or Mobile data in Settings</string>
+    <string name="cancel">Cancel</string>
+    <string name="error">Error</string>
+    <string name="ok">OK</string>
+
 </resources>
